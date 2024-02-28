@@ -1,0 +1,216 @@
+<!doctype html><html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Duongnv</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.12/tailwind.min.css'>
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class="container">
+			<h2>Câu 1: HTML và CSS</h2>
+			<div class="list-location">
+				<div class="item-row">
+					<div class="wrapper">
+						<div class="image"><img src="images/image-1.jpg" alt="Khu du lịch sinh thái Tràng An"></div>
+						<h3>Khu du lịch sinh thái Tràng An</h3>
+						<p>Khu du lịch sinh thái Tràng An là một phần của Quần thể danh thắng Tràng An nổi tiếng và cũng là một địa điểm tham quan Ninh Bình đẹp nhất. Khu du lịch sinh thái Tràng An tập hợp những yếu tố nổi bật nhất với các hang động kỳ bí, những thung lũng xanh mướt và những dòng sông quanh co ôm lấy chân núi trùng trùng điệp điệp.</p>
+					</div>
+				</div>
+				<div class="item-row">
+					<div class="wrapper">
+						<div class="image"><img src="images/image-2.jpg" alt="Trải nghiệm săn mây ở Sapa"></div>
+						<h3>Trải nghiệm săn mây ở Sapa</h3>
+						<p>Thời gian gần đây Sapa được xem là điểm đến quốc dân, sau Đà Lạt. Nhờ khí hậu mát mẻ, thiên nhiên ưu ái ban tặng những cảnh sắc tuyệt vời. Vì thế mà Sapa luôn là chốn dừng chân được nhiều bạn trẻ mơ ước đặt chân đến một lần trong đời. Sapa là một thị trấn vùng cao ở Tây Bắc, nơi đây nổi tiếng với những thửa rộng bậc thang trải dài bạt ngàn.</p>
+					</div>
+				</div>
+				<div class="item-row">
+					<div class="wrapper">
+						<div class="image"><img src="images/image-3.jpg" alt="Mù Cang Chải Yên Bái"></div>
+						<h3>Mù Cang Chải Yên Bái</h3>
+						<p>Du lịch miền Bắc bạn không thể bỏ lỡ cơ hội chiêm ngưỡng những thửa ruộng bậc thang ở Mù Cang Chải, Yên Bái. Mù Cang Chải là một huyện miền núi phía Tây Bắc của tỉnh Yên Bái. Bên cạnh Sapa hay Hà Giang thì Yên Bái cũng là địa danh được nhiều du khách trong và ngoài nước ghé thăm.</p>
+					</div>
+				</div>
+				<div class="item-row">
+					<div class="wrapper">
+						<div class="image"><img src="images/image-4.jpg" alt="Vịnh Hạ Long, Quảng Ninh"></div>
+						<h3>Vịnh Hạ Long, Quảng Ninh</h3>
+						<p>Nhắc đến địa điểm du lịch phải đi một lần trong đời, không thể thiếu Vịnh Hạ Long, Quảng Ninh. Di sản thiên nhiên của thế giới được Unesco nhiều lần công nhận. Dù là du khách trong hay ngoài nước thì khi đến Vịnh Hạ Long đều có chung một cảm xúc, là sự rung động trước một kỳ quan độc đáo.</p>
+					</div>
+				</div>
+				<div class="item-row">
+					<div class="wrapper">
+						<div class="image"><img src="images/image-5.jpg" alt="Động Thiên Đường"></div>
+						<h3>Động Thiên Đường</h3>
+						<p>Được mệnh danh là Hoàng cung trong lòng đất, Động Thiên Đường là địa điểm du lịch Việt Nam phải đi một lần trong đời. Đây là một trong những kỳ quan huyền ảo và kỳ vĩ nhất thế giới. Với những vòm động cao vút, các thạch nhũ tuyệt đẹp và những măng đá vô vàng các hình thù độc đáo.</p>
+					</div>
+				</div>
+			</div>
+			<div class="form-main">
+				<h3>Đặt tour</h3>
+				<form action="">
+					<div class="item-form">
+						<label for="name">Họ tên:</label>
+						<input type="text" id="name" name="name" value="">
+					</div>
+					<div class="item-form">
+						<label for="email">Email:</label>
+						<input type="text" id="email" name="email" value="">
+					</div>
+					<div class="item-form">
+						<label for="address">Điểm đến:</label>
+						<input type="text" id="address" name="address" value="">
+					</div>
+					<div class="item-form">
+						<label for="date">Ngày khởi hành:</label>
+						<input type="date" id="date" name="date">
+					</div>
+					<div class="submit"><input type="submit" value="Submit"></div>
+				</form> 
+			</div>
+			<h2>Câu 2: Tailwind CSS và JavaScript</h2>
+			<div class="popup">
+			  <div class="max-w-4xl p-8 mx-auto"
+				x-data="alpineLightbox()" x-init="src = pixel" x-on:keydown.escape.window="close()">
+				<!-- Start thumbnail grid -->
+				<div class="grid grid-cols-2 gap-4 sm:gap-8 sm:grid-cols-3 md:grid-cols-4">
+				  
+				  <figure
+					class="block w-full p-1 transition-shadow duration-200 ease-out bg-white border border-gray-300 rounded cursor-pointer hover:shadow-xl">
+					<img class="block object-fill w-full" src="images/image-2.jpg"
+					  alt="Thumbnail" data-fullsize="images/image-2.jpg"
+					  x-on:click="open($event)">
+						<div class="desc">
+							<h3>Mù Cang Chải Yên Bái</h3>
+							<p>Du lịch miền Bắc bạn không thể bỏ lỡ cơ hội chiêm ngưỡng những thửa ruộng bậc thang ở Mù Cang Chải, Yên Bái. Mù Cang Chải là một huyện miền núi phía Tây Bắc của tỉnh Yên Bái. Bên cạnh Sapa hay Hà Giang thì Yên Bái cũng là địa danh được nhiều du khách trong và ngoài nước ghé thăm.</p>
+						</div>
+				  </figure>
+				  <figure
+					class="block w-full p-1 transition-shadow duration-200 ease-out bg-white border border-gray-300 rounded cursor-pointer hover:shadow-xl">
+					<img class="block object-fill w-full" src="images/image-3.jpg"
+					  alt="Thumbnail" data-fullsize="images/image-3.jpg"
+					  x-on:click="open($event)">
+						<div class="desc">
+							<h3>Trải nghiệm săn mây ở Sapa</h3>
+							<p>Thời gian gần đây Sapa được xem là điểm đến quốc dân, sau Đà Lạt. Nhờ khí hậu mát mẻ, thiên nhiên ưu ái ban tặng những cảnh sắc tuyệt vời. Vì thế mà Sapa luôn là chốn dừng chân được nhiều bạn trẻ mơ ước đặt chân đến một lần trong đời. Sapa là một thị trấn vùng cao ở Tây Bắc, nơi đây nổi tiếng với những thửa rộng bậc thang trải dài bạt ngàn.</p>
+						</div>
+				  </figure>
+				  <figure
+					class="block w-full p-1 transition-shadow duration-200 ease-out bg-white border border-gray-300 rounded cursor-pointer hover:shadow-xl">
+					<img class="block object-fill w-full" src="images/image-4.jpg"
+					  alt="Thumbnail" data-fullsize="images/image-4.jpg"
+					  x-on:click="open($event)">
+						<div class="desc">
+							<h3>Vịnh Hạ Long, Quảng Ninh</h3>
+							<p>Nhắc đến địa điểm du lịch phải đi một lần trong đời, không thể thiếu Vịnh Hạ Long, Quảng Ninh. Di sản thiên nhiên của thế giới được Unesco nhiều lần công nhận. Dù là du khách trong hay ngoài nước thì khi đến Vịnh Hạ Long đều có chung một cảm xúc, là sự rung động trước một kỳ quan độc đáo.</p>
+						</div>
+				  </figure>
+				  <figure
+					class="block w-full p-1 transition-shadow duration-200 ease-out bg-white border border-gray-300 rounded cursor-pointer hover:shadow-xl">
+						<img class="block object-fill w-full" src="images/image-5.jpg"
+					  alt="Thumbnail" data-fullsize="images/image-5.jpg"
+					  x-on:click="open($event)">
+						<div class="desc">
+							<h3>Động Thiên Đường</h3>
+							<p>Được mệnh danh là Hoàng cung trong lòng đất, Động Thiên Đường là địa điểm du lịch Việt Nam phải đi một lần trong đời. Đây là một trong những kỳ quan huyền ảo và kỳ vĩ nhất thế giới. Với những vòm động cao vút, các thạch nhũ tuyệt đẹp và những măng đá vô vàng các hình thù độc đáo.</p>
+						</div>
+				  </figure>
+				</div>
+				<!-- End thumbnail grid -->
+
+				<!-- Start lightbox -->
+				<div
+				  class="fixed inset-0 z-50 grid gap-2 px-4 bg-black bg-opacity-75 sm:px-12 place-items-center grid-rows-lightbox"
+				  x-show="isOpen"
+				  x-transition:enter="transition ease-out duration-300"
+				  x-transition:enter-start="opacity-0"
+				  x-transition:enter-end="opacity-100"
+				  x-transition:leave="transition ease-in duration-300"
+				  x-transition:leave-start="opacity-100"
+				  x-transition:leave-end="opacity-0"
+				>
+					<button class="flex items-center p-2 text-white row-start-3" aria-label="Close" x-on:click="close()">
+					<svg class="w-8 h-8 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+					</svg>
+					<span class="text-xl font-light uppercase">Close</span>
+					</button>
+
+					<img class="block object-contain row-start-2 img-popup"
+					x-bind:src="src"
+					x-bind:alt="alt"
+					x-show="isOpen"
+					x-transition:enter="transition ease-out duration-300 delay-150"
+					x-transition:enter-start="opacity-0"
+					x-transition:enter-end="opacity-100"
+					x-transition:leave="transition ease-in duration-300"
+					x-transition:leave-start="opacity-100"
+					x-transition:leave-end="opacity-0"
+					>
+				</div>
+				<!-- End lightbox -->
+
+			  </div>
+			</div>
+			<h2>Câu 3: JavaScript ES6 và Local Storage</h2>
+				<ul id="commentList"></ul>
+				<div class="wrapper-comment">
+					<textarea id="commentInput" placeholder="Add a comment"></textarea>
+					<div class="button-cm"><button id="addCommentBtn">Add Comment</button></div>
+				</div>
+			  <script>
+				// Load comments from Local Storage
+				const loadComments = () => {
+				  const comments = JSON.parse(localStorage.getItem('comments')) || [];
+				  const commentList = document.getElementById('commentList');
+				  commentList.innerHTML = '';
+
+				  comments.forEach(comment => {
+					const li = document.createElement('li');
+					li.className = 'comment';
+					li.textContent = comment;
+					commentList.appendChild(li);
+				  });
+				};
+
+				// Save comments to Local Storage
+				const saveComments = (comments) => {
+				  localStorage.setItem('comments', JSON.stringify(comments));
+				};
+
+				// Event listener for adding comments
+				const addComment = () => {
+				  const commentInput = document.getElementById('commentInput');
+				  const commentList = document.getElementById('commentList');
+
+				  const newComment = commentInput.value.trim();
+				  if (newComment !== '') {
+					const li = document.createElement('li');
+					li.className = 'comment';
+					li.textContent = newComment;
+					commentList.appendChild(li);
+
+					// Save the new comment to Local Storage
+					const comments = JSON.parse(localStorage.getItem('comments')) || [];
+					comments.push(newComment);
+					saveComments(comments);
+
+					// Clear the input field
+					commentInput.value = '';
+				  }
+				};
+
+				// Event listener for the "Add Comment" button
+				document.getElementById('addCommentBtn').addEventListener('click', addComment);
+
+				// Initial load of comments
+				loadComments();
+			  </script>
+		</div>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.7.0/alpine.js'></script>
+		<script  src="js/script.js"></script>
+	</body>
+</html>
